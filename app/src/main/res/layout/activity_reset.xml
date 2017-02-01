@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeitsussie.team85.expensetracker.ResetActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_header"
+        android:id="@+id/reset_header"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/reset_header"
+        android:background="@color/background_material_dark"
+        android:id="@+id/sc1">
+
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:rowCount="4">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_budget"
+        android:id="@+id/reset_budget"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/reset_liabilities"
+        android:layout_toEndOf="@+id/reset_expenses"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_expenses"
+        android:id="@+id/reset_expenses"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_liabilities"
+        android:id="@+id/reset_liabilities"
+        android:layout_below="@+id/reset_expenses"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_goals"
+        android:id="@+id/reset_goals"
+        android:layout_alignTop="@+id/reset_liabilities"
+        android:layout_alignEnd="@+id/reset_budget"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+</GridLayout>
+    </ScrollView>
+    </RelativeLayout>

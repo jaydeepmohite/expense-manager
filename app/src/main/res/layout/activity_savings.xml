@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavingsActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saving_header"
+        android:id="@+id/saving_header"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/saving_header"
+        android:background="@color/background_floating_material_dark">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavingsActivity"
+    android:id="@+id/rl">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saving_target"
+        android:id="@+id/saving_target"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_saving"
+        android:id="@+id/current_saving"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/saving_target"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:padding="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_saving"
+        android:id="@+id/total_saving"
+        android:layout_below="@+id/current_saving"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
